@@ -41,7 +41,7 @@ public class GBAServer {
                 String cli = String.format(command, input);
                 logger.info(String.format("Running command: %s", cli));
 
-                Runtime.getRuntime().exec(String.format(command, input));
+                Runtime.getRuntime().exec(cli);
             }
 
         } catch (IOException e) {
